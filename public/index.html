@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เครื่องคำนวณ BMI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="main-container">
+    <div class="card">
+      <div class="card-header">
+        <span class="material-icons avatar">egg</span>
+        <span>เครื่องคำนวณ BMI</span>
+        <span class="material-icons share">share</span>
+      </div>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="fullname">ชื่อ-นามสกุล</label>
+          <input type="text" id="fullname" maxlength="100" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="phone" maxlength="20" pattern="[0-9]{9,15}" required>
+        </div>
+        <div class="form-row">
+          <label for="gender">เพศ</label>
+          <select id="gender" required>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="age">อายุ</label>
+          <input type="number" id="age" min="1" max="120" required>
+        </div>
+        <form id="bmi-form">
+          <label>ส่วนสูงของคุณ</label>
+          <div class="input-slider-group">
+            <input type="number" id="height" min="50" max="250" required>
+            <span class="unit">ซม.</span>
+          </div>
+          <input type="range" id="height-slider" min="50" max="250" value="160">
+          <label>น้ำหนักของคุณ</label>
+          <div class="input-slider-group">
+            <input type="number" id="weight" min="10" max="300" required>
+            <span class="unit">กก.</span>
+          </div>
+          <input type="range" id="weight-slider" min="10" max="300" value="80">
+          <button type="submit" class="calc-btn"><span class="material-icons">tune</span> คำนวณ</button>
+        </form>
+      </div>
+    </div>
+    <div class="card result-card" id="result-card" style="display:none;">
+      <div class="card-header result-header">ผลลัพธ์ BMI ของคุณ</div>
+      <div class="card-body">
+        <div class="bmi-label">ดัชนีมวลกายสำหรับผู้ใหญ่</div>
+        <div class="bmi-value-box">
+          <span id="bmi-value" class="bmi-value"></span>
+        </div>
+        <div class="bmi-bar">
+          <div class="bmi-bar-segments"></div>
+          <div id="bmi-indicator"></div>
+        </div>
+        <div class="bmi-legend">
+          <span class="underweight">น้ำหนักน้อย</span>
+          <span class="healthy">สมส่วน</span>
+          <span class="overweight">น้ำหนักเกิน</span>
+          <span class="obese">อ้วน</span>
+        </div>
+        <div id="bmi-category" class="bmi-category"></div>
+        <div id="bmi-description" class="bmi-description"></div>
+        <div class="suggested-range">
+          <div>ช่วงน้ำหนักที่เหมาะสม</div>
+          <div class="range-value"><span id="min-weight"></span> กก. <span class="arrow">↓</span> <span id="max-weight"></span> กก.</div>
+        </div>
+        <div class="bmi-note">*ตามคำแนะนำของสภาวิจัยสุขภาพแห่งชาติ ดัชนีมวลกายที่เหมาะสมสำหรับผู้ใหญ่ส่วนใหญ่อยู่ระหว่าง 20-25</div>
+      </div>
+    </div>
+    <div class="card history-card" id="history-card" style="display:none;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
