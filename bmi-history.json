@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp": "2025-06-30T02:45:18.506Z",
+    "fullname": "test",
+    "phone": "123",
+    "gender": "male",
+    "age": 133,
+    "height": 160,
+    "weight": 80,
+    "bmi": "31.2",
+    "category": "Obese"
+  },
+  {
+    "timestamp": "2025-06-30T02:45:45.979Z",
+    "fullname": "test2",
+    "phone": "123",
+    "gender": "male",
+    "age": 133,
+    "height": 79,
+    "weight": 80,
+    "bmi": "128.2",
+    "category": "Obese"
+  },
+  {
+    "timestamp": "2025-06-30T03:58:37.068Z",
+    "fullname": "test2",
+    "phone": "123",
+    "gender": "male",
+    "age": 133,
+    "height": 79,
+    "weight": 80,
+    "bmi": "128.2",
+    "category": "Obese"
+  },
+  {
+    "timestamp": "2025-06-30T03:58:37.686Z",
+    "fullname": "test2",
+    "phone": "123",
+    "gender": "male",
+    "age": 133,
+    "height": 79,
+    "weight": 80,
+    "bmi": "128.2",
+    "category": "Obese"
+  },
+  {
+    "timestamp": "2025-06-30T03:58:37.863Z",
+    "fullname": "test2",
+    "phone": "123",
+    "gender": "male",
+    "age": 133,
+    "height": 79,
+    "weight": 80,
+    "bmi": "128.2",
+    "category": "Obese"
+  }
+]
